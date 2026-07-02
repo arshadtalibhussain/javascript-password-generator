@@ -1,3 +1,5 @@
+Your site is live at https://arshadtalibhussain.github.io/javascript-password-generator/
+
 # Password Generator
 
 A simple password generator web app that creates multiple strong passwords based on a user-provided length.
