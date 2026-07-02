@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #4d7cff 0%, #5dd4ff 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  width: min(1100px, 100%);
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 28px;
+  box-shadow: 0 24px 80px rgba(24, 44, 112, 0.16);
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 32px;
+  padding: 32px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+
+.hero-copy h1 {
+  font-size: clamp(2rem, 3.2vw, 3rem);
+  color: #152238;
+  line-height: 1.05;
+}
+
+.hero-copy p {
+  color: #33415d;
+  font-size: 1rem;
+  line-height: 1.8;
+  max-width: 44rem;
+}
+
+.controls {
+  display: grid;
+  gap: 16px;
+}
+
+.controls label {
+  font-weight: 600;
+  color: #1b2b4d;
+}
+
+.controls input {
+  width: 100%;
+  padding: 16px 18px;
+  border-radius: 16px;
+  border: 1px solid #c4d2ff;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.controls input:focus {
+  border-color: #4d7cff;
+  box-shadow: 0 0 0 4px rgba(77, 124, 255, 0.14);
+}
+
+.controls button {
+  padding: 16px 24px;
+  border: none;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #4d7cff 0%, #6d8eff 100%);
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.controls button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 18px 30px rgba(77, 124, 255, 0.22);
+}
+
+.resultpasswords {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  align-content: start;
+}
+
+.output-card {
+  background: #f7faff;
+  border: 1px solid rgba(77, 124, 255, 0.16);
+  border-radius: 20px;
+  padding: 22px;
+  min-height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.output-label {
+  color: #62729f;
+  font-size: 0.95rem;
+}
+
+.output {
+  font-size: 1rem;
+  color: #111827;
+  word-break: break-all;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  .controls input,
+  .controls button {
+    padding: 14px 16px;
+  }
+
+  .resultpasswords {
+    grid-template-columns: 1fr;
+  }
+}

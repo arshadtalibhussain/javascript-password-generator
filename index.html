@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <section class="hero">
+            <div class="hero-copy">
+                <h1>Password Generator</h1>
+                <p>Generate multiple secure passwords instantly. Enter a length and click the button to create strong passwords for your accounts.</p>
+            </div>
+
+            <div class="controls">
+                <label for="limit">Password length</label>
+                <input type="number" id="limit" min="4" max="128" placeholder="Enter a number between 4 and 128" />
+                <button type="button" id="generateBtn">Generate Passwords</button>
+            </div>
+        </section>
+
+        <section class="resultpasswords">
+            <div class="output-card">
+                <span class="output-label">Password 1</span>
+                <span class="output output1"></span>
+            </div>
+            <div class="output-card">
+                <span class="output-label">Password 2</span>
+                <span class="output output2"></span>
+            </div>
+            <div class="output-card">
+                <span class="output-label">Password 3</span>
+                <span class="output output3"></span>
+            </div>
+            <div class="output-card">
+                <span class="output-label">Password 4</span>
+                <span class="output output4"></span>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
